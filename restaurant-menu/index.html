@@ -1,7 +1,37 @@
 <!-- The concepts covered by this project include:
-- HTML structure and semantics
-- CSS Grid + Flexbox for layout
-- Media queries for responsive design
+Semantic HTML: <header>, <h1>, <h2>, <h3>, <p>, <img> - meaningful tags 
+• Proper nesting: Hierarchical structure with containers and content sections 
+• Accessibility: alt attributes, logical heading order, semantic markup 
+• Class naming: BEM-style naming (menu-item, menu-item-text, menu-item-price)
+
+CSS Grid Layout
+• Grid container: display: grid on .menu-group • Responsive columns: 1fr (mobile) → repeat(2, 1fr) (desktop) 
+• Grid gap: Consistent spacing between items 
+• Auto-fit layout: Items automatically arrange in grid
+
+CSS Flexbox Layout
+• Flex containers: .menu-item and .menu-item-heading 
+• Space distribution: justify-content: space-between for name/price alignment 
+• Flexible sizing: flex-grow: 1 for expanding text areas 
+• Cross-axis alignment: Proper vertical alignment
+
+Responsive Design
+• Mobile-first: Start with single column, expand for larger screens 
+• Media queries: @media (min-width: 992px) breakpoint 
+• Flexible units: em, fr, vh instead of fixed pixels 
+• Scalable typography: Font sizes adjust with screen size
+
+Visual Design
+• CSS Gradients: linear-gradient() for backgrounds and text 
+• Box shadows: Depth and elevation effects 
+• Border radius: Rounded corners for modern look 
+• Hover effects: transform and transition for interactivity
+
+Modern CSS Features
+• CSS Grid + Flexbox combo: Grid for overall layout, Flexbox for component layout 
+• CSS Custom Properties: Web fonts from Google Fonts 
+• Pseudo-elements: ::after for decorative elements 
+• Advanced selectors: :hover, :not() for state-based styling
 -->
 
 <!DOCTYPE html>
