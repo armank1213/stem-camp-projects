@@ -1,0 +1,332 @@
+<!-- The concepts covered by this project include:
+- HTML structure and semantics
+- CSS Grid + Flexbox for layout
+- Media queries for responsive design
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="menu">
+      <h2 class="menu-group-heading">
+        Appetizers
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/bruschetta.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Bruschetta</span>
+              <span class="menu-item-price">$12.90</span>
+            </h3>
+            <p class="menu-item-description">
+              Grilled sourdough topped with fresh tomatoes, basil, garlic, and extra virgin olive oil.
+              A classic Italian starter perfect for sharing.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/calamari.jpg" alt="Calamari Rings">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Crispy Calamari</span>
+              <span class="menu-item-price">$15.50</span>
+            </h3>
+            <p class="menu-item-description">
+              Fresh squid rings lightly battered and fried to golden perfection. Served with marinara sauce
+              and lemon wedges.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/mushrooms.jpg" alt="Stuffed Mushrooms">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Stuffed Mushrooms</span>
+              <span class="menu-item-price">$13.75</span>
+            </h3>
+            <p class="menu-item-description">
+              Button mushrooms filled with herbed cream cheese, breadcrumbs, and parmesan.
+              Baked until golden and bubbly.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/artichoke.jpg" alt="Spinach Artichoke Dip">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Spinach Artichoke Dip</span>
+              <span class="menu-item-price">$14.25</span>
+            </h3>
+            <p class="menu-item-description">
+              Creamy blend of spinach, artichokes, and three cheeses. Served hot with tortilla chips
+              and warm pita bread.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="menu-group-heading">
+        Main Courses
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/salmon.jpg" alt="Grilled Salmon">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Grilled Atlantic Salmon</span>
+              <span class="menu-item-price">$28.90</span>
+            </h3>
+            <p class="menu-item-description">
+              Fresh salmon fillet grilled to perfection with lemon herb butter. Served with roasted vegetables
+              and garlic mashed potatoes.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/ribeye.jpg" alt="Ribeye Steak">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Ribeye Steak</span>
+              <span class="menu-item-price">$34.50</span>
+            </h3>
+            <p class="menu-item-description">
+              12oz prime ribeye steak grilled to your preference. Served with truffle fries
+              and seasonal vegetables.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/chicken.jpg" alt="Chicken Parmesan">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chicken Parmesan</span>
+              <span class="menu-item-price">$24.75</span>
+            </h3>
+            <p class="menu-item-description">
+              Breaded chicken breast topped with marinara sauce and melted mozzarella.
+              Served over spaghetti with fresh basil.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/risotto.jpg" alt="Mushroom Risotto">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Wild Mushroom Risotto</span>
+              <span class="menu-item-price">$22.90</span>
+            </h3>
+            <p class="menu-item-description">
+              Creamy arborio rice with wild mushrooms, white wine, and parmesan cheese.
+              Finished with truffle oil and fresh herbs.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/tacos.jpg" alt="Fish Tacos">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Baja Fish Tacos</span>
+              <span class="menu-item-price">$19.50</span>
+            </h3>
+            <p class="menu-item-description">
+              Beer-battered white fish with cabbage slaw, pico de gallo, and chipotle aioli.
+              Served in corn tortillas with black beans and rice.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/lamb.jpg" alt="Lamb Chops">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Herb-Crusted Lamb Chops</span>
+              <span class="menu-item-price">$32.90</span>
+            </h3>
+            <p class="menu-item-description">
+              New Zealand lamb chops with rosemary and thyme crust. Served with mint jelly,
+              roasted fingerling potatoes, and grilled asparagus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="menu-group-heading">
+        Pasta & Pizza
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/carbonara.jpg" alt="Spaghetti Carbonara">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Spaghetti Carbonara</span>
+              <span class="menu-item-price">$21.90</span>
+            </h3>
+            <p class="menu-item-description">
+              Traditional Roman pasta with pancetta, eggs, pecorino romano, and freshly cracked black pepper.
+              A timeless Italian classic.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/margherita.jpg" alt="Margherita Pizza">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pizza Margherita</span>
+              <span class="menu-item-price">$18.50</span>
+            </h3>
+            <p class="menu-item-description">
+              Wood-fired pizza with San Marzano tomatoes, fresh mozzarella, basil, and extra virgin olive oil.
+              Simple perfection on a crispy crust.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/penne.jpg" alt="Penne Arrabbiata">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Penne Arrabbiata</span>
+              <span class="menu-item-price">$19.75</span>
+            </h3>
+            <p class="menu-item-description">
+              Penne pasta in a spicy tomato sauce with garlic, red chilies, and fresh parsley.
+              A fiery Italian favorite that brings the heat.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/quattro.jpg" alt="Quattro Formaggi Pizza">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Quattro Formaggi Pizza</span>
+              <span class="menu-item-price">$24.90</span>
+            </h3>
+            <p class="menu-item-description">
+              Four cheese pizza with mozzarella, gorgonzola, parmesan, and fontina on a white sauce base.
+              Rich, creamy, and absolutely indulgent.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="menu-group-heading">
+        Desserts
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/tiramisu.jpg" alt="Tiramisu">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Classic Tiramisu</span>
+              <span class="menu-item-price">$9.90</span>
+            </h3>
+            <p class="menu-item-description">
+              Traditional Italian dessert with ladyfingers soaked in espresso, layered with mascarpone cream,
+              and dusted with cocoa powder.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/cake.jpg" alt="Chocolate Lava Cake">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chocolate Lava Cake</span>
+              <span class="menu-item-price">$11.50</span>
+            </h3>
+            <p class="menu-item-description">
+              Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries.
+              A chocolate lover's dream come true.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/brulee.jpg" alt="Crème Brûlée">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Vanilla Crème Brûlée</span>
+              <span class="menu-item-price">$8.75</span>
+            </h3>
+            <p class="menu-item-description">
+              Rich vanilla custard topped with a layer of caramelized sugar. Served with fresh strawberries
+              and a delicate tuile cookie.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/gelato.jpg" alt="Gelato">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Artisan Gelato</span>
+              <span class="menu-item-price">$7.25</span>
+            </h3>
+            <p class="menu-item-description">
+              Three scoops of house-made gelato in rotating seasonal flavors. Ask your server
+              for today's selection of authentic Italian gelato.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="menu-group-heading">
+        Beverages
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/juices.jpg" alt="Fresh Fruit Juices">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Fresh Fruit Juices</span>
+              <span class="menu-item-price">$3.50</span>
+            </h3>
+            <p class="menu-item-description">
+              Freshly squeezed orange, apple, cranberry, and grape juices. 
+              No added sugars or preservatives - just pure, natural fruit goodness.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/milk.jpg" alt="Chocolate Milk">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Creamy Chocolate Milk</span>
+              <span class="menu-item-price">$2.75</span>
+            </h3>
+            <p class="menu-item-description">
+              Rich and creamy chocolate milk made with premium cocoa and fresh whole milk.
+              A favorite treat that's both delicious and nutritious.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/soda.jpg" alt="Italian Sodas">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Italian Fruit Sodas</span>
+              <span class="menu-item-price">$3.25</span>
+            </h3>
+            <p class="menu-item-description">
+              Sparkling fruit sodas in cherry, orange, lemon, and berry flavors.
+              Made with natural fruit syrups and sparkling water for a refreshing fizz.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/milkshakes.jpg" alt="Milkshakes">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Classic Milkshakes</span>
+              <span class="menu-item-price">$5.50</span>
+            </h3>
+            <p class="menu-item-description">
+              Thick and creamy milkshakes in vanilla, chocolate, strawberry, and cookies & cream.
+              Topped with whipped cream and a cherry. Perfect for sharing!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
