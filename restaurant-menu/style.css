@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
-
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -13,84 +11,39 @@ body {
   padding: 1.5em;
 }
 
-.restaurant-header {
-  text-align: center;
-  margin-bottom: 2em;
-  padding: 2em 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 15px;
-  color: white;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.restaurant-header h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3em;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.restaurant-tagline {
-  font-family: "Inter", sans-serif;
-  font-size: 1.2em;
-  font-weight: 300;
-  margin: 0.5em 0 0 0;
-  opacity: 0.9;
-}
-
 .menu {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   background: white;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 2em;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .menu-group-heading {
   margin: 0;
   padding-bottom: 1em;
-  border-bottom: 3px solid #667eea;
-  font-family: "Playfair Display", serif;
-  font-size: 2em;
+  border-bottom: 2px solid #e9ecef;
+  color: #2c3e50;
   font-weight: 600;
-  color: #333;
-  position: relative;
-}
-
-.menu-group-heading::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(135deg, #ff6b6b, #feca57);
-  border-radius: 2px;
 }
 
 .menu-group {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2em;
-  padding: 2em 0;
+  gap: 1.5em;
+  padding: 1.5em 0;
 }
 
 .menu-item {
   display: flex;
-  background: linear-gradient(135deg, #f8f9ff 0%, #fff5f5 100%);
-  border-radius: 15px;
-  padding: 1.5em;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(102, 126, 234, 0.1);
+  padding: 1em;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
 .menu-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  border-color: rgba(102, 126, 234, 0.3);
+  background-color: #f8f9fa;
 }
 
 .menu-item-image {
@@ -99,8 +52,7 @@ body {
   flex-shrink: 0;
   object-fit: cover;
   margin-right: 1.5em;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 4px;
 }
 
 .menu-item-text {
@@ -110,41 +62,27 @@ body {
 .menu-item-heading {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0.8em 0;
-  align-items: flex-start;
+  margin: 0;
 }
 
 .menu-item-name {
   margin-right: 1.5em;
-  font-family: "Playfair Display", serif;
-  font-size: 1.3em;
-  font-weight: 600;
   color: #2c3e50;
+  font-weight: 500;
 }
 
 .menu-item-price {
-  font-weight: 600;
   color: #e74c3c;
-  font-size: 1.2em;
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 600;
 }
 
 .menu-item-description {
   line-height: 1.6;
-  color: #5a6c7d;
-  font-size: 0.95em;
-  margin: 0;
+  color: #6c757d;
+  margin: 0.5em 0 0 0;
 }
 
-
 @media screen and (min-width: 992px) {
-  .restaurant-header h1 {
-    font-size: 4em;
-  }
-
   .menu {
     font-size: 16px;
     padding: 3em;
@@ -152,23 +90,14 @@ body {
 
   .menu-group {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5em;
   }
 
   .menu-item {
-    padding: 2em;
+    padding: 1.5em;
   }
 
   .menu-item-image {
     width: 125px;
     height: 125px;
-  }
-
-  .menu-item-name {
-    font-size: 1.4em;
-  }
-
-  .menu-group-heading {
-    font-size: 2.5em;
   }
 }
