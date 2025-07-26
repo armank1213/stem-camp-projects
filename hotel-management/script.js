@@ -1,6 +1,3 @@
-// Simple Hotel Restaurant Management System for Browser Console
-
-// Variables to store how many items we have
 var roomsAvailable = 0;
 var pizzasAvailable = 0;
 var burgersAvailable = 0;
@@ -8,7 +5,7 @@ var noodlesAvailable = 0;
 var shakesAvailable = 0;
 var cakesAvailable = 0;
 
-// Variables to count how many items we sold
+
 var roomsSold = 0;
 var pizzasSold = 0;
 var burgersSold = 0;
@@ -16,7 +13,7 @@ var noodlesSold = 0;
 var shakesSold = 0;
 var cakesSold = 0;
 
-// Variables to track money earned from each item
+
 var moneyFromRooms = 0;
 var moneyFromPizzas = 0;
 var moneyFromBurgers = 0;
@@ -24,7 +21,7 @@ var moneyFromNoodles = 0;
 var moneyFromShakes = 0;
 var moneyFromCakes = 0;
 
-// Prices for each item
+
 var roomPrice = 999;
 var pizzaPrice = 20;
 var burgerPrice = 15;
@@ -32,7 +29,7 @@ var noodlePrice = 12;
 var shakePrice = 7;
 var cakePrice = 5;
 
-// Function to get input from user and show result
+
 function getInput(message) {
     var input = prompt(message);
     var number = parseInt(input) || 0;
@@ -40,12 +37,12 @@ function getInput(message) {
     return number;
 }
 
-// Function to display message in console
+
 function display(message) {
     console.log(message);
 }
 
-// Function to set up initial inventory (manager input)
+
 function setupInventory() {
     display("=== SETTING UP INVENTORY ===");
     
@@ -62,7 +59,7 @@ function setupInventory() {
             shakesAvailable + " shakes, " + cakesAvailable + " cakes");
 }
 
-// Function to show the menu
+
 function showMenu() {
     display("\n=== HOTEL RESTAURANT MENU ===");
     display("1. Book Room/s ($" + roomPrice + " each)");
@@ -76,7 +73,7 @@ function showMenu() {
     display("=============================");
 }
 
-// Function to handle room booking
+
 function bookRooms() {
     display("\n BOOKING ROOMS");
     var roomsWanted = getInput("How many rooms do you want to book?");
@@ -94,7 +91,7 @@ function bookRooms() {
     }
 }
 
-// Function to handle pizza orders
+
 function orderPizzas() {
     display("\n ORDERING PIZZAS");
     var pizzasWanted = getInput("How many pizzas do you want to order?");
@@ -112,7 +109,7 @@ function orderPizzas() {
     }
 }
 
-// Function to handle burger orders
+
 function orderBurgers() {
     display("\n ORDERING BURGERS");
     var burgersWanted = getInput("How many burgers do you want to order?");
@@ -130,7 +127,7 @@ function orderBurgers() {
     }
 }
 
-// Function to handle noodle orders
+
 function orderNoodles() {
     display("\n ORDERING NOODLES");
     var noodlesWanted = getInput("How many noodles do you want to order?");
@@ -148,7 +145,7 @@ function orderNoodles() {
     }
 }
 
-// Function to handle shake orders
+
 function orderShakes() {
     display("\n ORDERING MILK SHAKES");
     var shakesWanted = getInput("How many milk shakes do you want to order?");
@@ -166,7 +163,7 @@ function orderShakes() {
     }
 }
 
-// Function to handle cake orders
+
 function orderCakes() {
     display("\n ORDERING CHOCOLATE CAKES");
     var cakesWanted = getInput("How many chocolate cakes do you want to order?");
@@ -184,7 +181,7 @@ function orderCakes() {
     }
 }
 
-// Function to show sales report
+
 function showSalesReport() {
     display("\n === SALES REPORT ===");
     
@@ -231,14 +228,14 @@ function showSalesReport() {
     display("========================");
 }
 
-// Main program function
+
 function runHotelSystem() {
     display("Welcome to Hotel Restaurant Management System!");
     
-    // Step 1: Setup inventory
+    
     setupInventory();
     
-    // Step 2: Keep showing menu until user exits
+    
     var keepRunning = true;
     
     while (keepRunning) {
@@ -268,6 +265,6 @@ function runHotelSystem() {
     }
 }
 
-// Start the program automatically when code is pasted
+
 display("Starting Hotel Management System...");
 runHotelSystem();
