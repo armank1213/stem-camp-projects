@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant</h1>
+        <div class="menu-section">
+            <h2> Main Courses</h2>
+            <div class="menu-item" onclick="addToOrder('Grilled Salmon', 28.90)">
+                <div class="item-info">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon with lemon herb butter, roasted vegetables, and garlic mashed potatoes</p>
+                </div>
+                <span class="item-price">$28.90</span>
+            </div>
+            <div class="menu-item" onclick="addToOrder('Ribeye Steak', 34.50)">
+                <div class="item-info">
+                    <h3>Tacos</h3>
+                    <p>Soft corn tortillas filled with grilled chicken, avocado, and salsa</p>
+                </div>
+                <span class="item-price">$34.50</span>
+            </div>
+            <div class="menu-item" onclick="addToOrder('Chicken Parmesan', 24.75)">
+                <div class="item-info">
+                    <h3>Chicken Parmesan</h3>
+                    <p>Breaded chicken breast with marinara and mozzarella, served over spaghetti</p>
+                </div>
+                <span class="item-price">$24.75</span>
+            </div>
+            <div class="menu-item" onclick="addToOrder('Mushroom Risotto', 22.90)">
+                <div class="item-info">
+                    <h3>Fried Rice</h3>
+                    <p>Stir-fried rice with vegetables, eggs, and your choice of protein</p>
+                </div>
+                <span class="item-price">$22.90</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Pasta & Pizza</h2>
+            <div class="menu-item" onclick="addToOrder('Spaghetti Carbonara', 21.90)">
+                <div class="item-info">
+                    <h3>Spaghetti</h3>
+                    <p>Traditional Roman pasta with pancetta, eggs, and pecorino romano</p>
+                </div>
+                <span class="item-price">$21.90</span>
+            </div>
+            <div class="menu-item" onclick="addToOrder('Pizza Margherita', 18.50)">
+                <div class="item-info">
+                    <h3>Margherita</h3>
+                    <p>Wood-fired pizza with San Marzano tomatoes, fresh mozzarella, and basil</p>
+                </div>
+                <span class="item-price">$18.50</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item" onclick="addToOrder('Tiramisu', 9.90)">
+                <div class="item-info">
+                    <h3>Tiramisu</h3>
+                    <p>Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+                </div>
+                <span class="item-price">$9.90</span>
+            </div>
+            <div class="menu-item" onclick="addToOrder('Chocolate Lava Cake', 11.50)">
+                <div class="item-info">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with molten center, served with vanilla ice cream</p>
+                </div>
+                <span class="item-price">$11.50</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Beverages</h2>
+            <div class="menu-item" onclick="addToOrder('Fresh Fruit Juice', 3.50)">
+                <div class="item-info">
+                    <h3>Fruit Juices</h3>
+                    <p>Orange, apple, cranberry, or grape - freshly squeezed</p>
+                </div>
+                <span class="item-price">$3.50</span>
+            </div>
+            <div class="menu-item" onclick="addToOrder('Classic Milkshake', 5.50)">
+                <div class="item-info">
+                    <h3>Classic Milkshakes</h3>
+                    <p>Vanilla, chocolate, or strawberry - thick and creamy</p>
+                </div>
+                <span class="item-price">$5.50</span>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h3>Your Order</h3>
+            <div id="orderItems">
+                <p>No items yet - click menu items to order!</p>
+            </div>
+            <div class="total" id="orderTotal">Total: $0.00</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
